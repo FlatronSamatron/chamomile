@@ -1,0 +1,327 @@
+@font-face{
+    font-family: open-sans;
+    src: url(fonts/OpenSans-Regular.ttf);
+}
+@font-face{
+    font-family: open-sans-bold;
+    src: url(fonts/OpenSans-Bold.ttf);
+}
+body{
+    margin: 0;
+    bottom: 0;
+    font-family: open-sans;
+}
+* {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+.logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+}
+.logo p{
+    color:#6CB33F;
+    font-family: open-sans-bold;
+}
+.logo span{
+    margin: 0 0 0 10px;
+}
+.logo img{
+    width: 48px;
+    height: 48px;
+}
+h1{
+    text-align: center;
+}
+header h2{
+    text-align: center;
+    color: #8E8E8E;
+}
+.header-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-form{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: #E5E6E7 solid 2px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+.header-form input[type="text"], 
+.header-form input[type="email"],
+.header-form input[type="tel"]{
+    width: 320px;
+    margin: 10px 0;
+    height: 50px;
+    background-color: #F8F8F8;
+    border: #E5E6E7 solid 2px;
+    border-radius: 5px;
+    color:#79B950;
+    font-size: 20px;
+    padding-left: 10px;
+}
+.header-form input[type="button"]{
+    background-color: #79B950;
+    width: 320px;
+    height: 60px;
+    color:#fff;
+    font-size: 30px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    outline: none;
+}
+.header-form input[type="button"]:hover{
+    background-color: #FFA800;
+    transition: 0.25s;
+}
+
+.header-form input[type="text"]::placeholder,
+.header-form input[type="email"]::placeholder,
+.header-form input[type="tel"]::placeholder{
+    color:#79B950;
+    font-size: 20px;
+}
+
+.properties{
+    background-color: #F7F7F7;
+    padding: 0 20px 20px 50px;
+    margin-top: 50px;
+}
+.properties h2{
+    text-align: center;
+    padding: 30px 0;
+    color:#79B950;
+    font-size: 30px;
+}
+.properties-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: minmax(230px,auto);
+    grid-column-gap: 25px;
+}
+.properties div{
+    text-align: center;
+}
+.properties div:hover>h3{
+    color:#FFA800;
+    text-decoration:line-through;
+    transition: 0.25s;
+}
+.properties div:hover>p{
+    color:#79B950;
+    transition: 0.25s;
+}
+.img1{
+    background-image: url(img/stress.svg);
+    height: 100px;
+    width: 100px;
+    background-repeat: no-repeat;
+    margin: auto;
+}
+.img2{
+    background-image: url(img/nosleep.svg);
+    height: 100px;
+    width: 100px;
+    background-repeat: no-repeat;
+    margin: auto;
+}
+.img3{
+    background-image: url(img/eat.svg);
+    height: 100px;
+    width: 100px;
+    background-repeat: no-repeat;
+    margin: auto;
+}
+.img4{
+    background-image: url(img/seek.svg);
+    height: 100px;
+    width: 100px;
+    background-repeat: no-repeat;
+    margin: auto;
+}
+.properties div:hover>.img{
+    background-image: url(img/happy.svg);
+    transition: 0.25s;
+}
+.benefit h2{
+    text-align: center;
+}
+.benefit-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 40px 0;
+}
+.benefit-flex p{
+    margin-left: 20px;
+    font-size: 12px;
+    width: 500px;
+}
+.benefit-flex span{
+    color:#79B950;
+    font-size: 20px;
+}
+.composition{
+    background-color: #F7F7F7;
+}
+.composition h2{
+    text-align: center;
+    color:#79B950;
+    padding-top: 20px;
+}
+.composition-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 230px 230px;
+    grid-gap: 20px;
+    padding: 0 20px 50px 20px;
+}
+.composition-grid div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(121, 185, 80, 0.8);
+    border-radius: 5px;
+    color:#F7F7F7;
+}
+.composition-grid div p{
+    text-align: center;
+}
+.fas{
+    margin-right: 10px;
+}
+.composition-grid div h3{
+    font-size: 25px;
+}
+.composition-grid div:hover{
+    background-color: #FFA800;
+    transition: 0.25s;
+}
+.composition-grid div:hover>h3 .fas{
+    color:rgba(121, 185, 80, 0.8);
+    transition: 0.5s;
+}
+.border{
+    background-color: #F8F8F8;
+    border: #E5E6E7 solid 1px;
+    width: 300px;
+    margin:20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.border img{
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.reviews{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+.names{
+    display: flex;
+    align-items: center;
+}
+.names span{
+    color:#9E9E9E;
+    font-size: 12px;
+}
+.fas{
+    color:#FFA800;
+}
+footer{
+    background-color: #F7F7F7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+}
+.first{
+    font-size: 30px;
+    text-align: center;
+}
+.second{
+    font-size: 25px;
+    color:#79B950;
+    text-align: center;
+}
+.third{
+    background-color: #79B950;
+    width: 320px;
+    height: 60px;
+    color:#fff;
+    font-size: 30px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    outline: none;
+}
+.third:hover{
+    background-color: #FFA800;
+    transition: 0.25s;
+}
+@media screen and (max-width:1100px) {
+    .header-content{
+        flex-direction: column;
+    }
+    .header-form{
+        margin: auto;
+    }
+}
+@media screen and (max-width:800px) {
+    .header-content img, .benefit img{
+        width: 100%;
+    }
+    .properties-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+    .benefit-flex{
+        flex-direction: column;
+    }
+    .composition-grid{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 230px 230px 230px;
+    }
+    .reviews{
+        flex-direction: column;
+        align-items: center;
+    }
+    .benefit-flex p{
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+}
+@media screen and (max-width:500px) {
+    .reviews{
+        margin: 0;
+    }
+    .header-form{
+        width: 100%;
+    }
+    .properties{
+        padding: 0;
+    }
+    .properties-grid{
+        grid-template-columns: 1fr;
+    }
+    .composition-grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 230px 230px 230px 230px 230px 230px;
+    }
+}
